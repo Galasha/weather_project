@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Weather APP</title>
+
+    <script
+      src="https://kit.fontawesome.com/a5bc5e4fd9.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
+    
+  </head>
+  <body>
+
+    <div class="background">
+      <img src="images/background.jpg" alt="Weather4seasons" width="100%" height="100%" id="background_img" name="img"/>
+        </div>
+    <div class="container" id="app">
+      <div class="popular_cities">
+        <div class="row">
+          <div class="col col-md-auto" id="popular_city1"><a hrev="">Kyiv</a></div>
+          <div class="col col-md-auto" id="popular_city2"><a hrev="">Lviv</a></div>
+          <div class="col col-md-auto" id="popular_city3"><a hrev="">Odessa</a></div>
+          <div class="col col-lg-2" id="popular_city4"><a hrev="">Kharkiv</a></div>
+          <div class="col col-lg-2" id="popular_city5"><a hrev="">Dnipro</a></div>
+          <div class="col converting">
+            <button id="convertCel">C</button>
+            <button id="convertFahr">F</button>
+          </div>
+        </div>
+      </div>
+
+      <form id="form">
+        <input
+          type="text"
+          class="search_form"
+          placeholder="Enter a city"
+          id="city_name"
+          autocomplete="off"
+        />
+        <input type="submit" value="Search" class="button" id="search_city" />
+        <button class="location_button" id="current_button">Your location</button>
+      </form>
+
+      
+      <div class="current">
+        <div>
+          <h1></h1>
+
+          <p class="current_day" id="current_date">
+            
+          </p>
+
+          <p class="current_timezone" id="current_time">
+            
+          </p>
+        </div>
+        <div>
+          <p class="current_icon">
+            <img
+              src=" "
+              width="40"
+              id="current_icon_weather"
+            />
+            <span id="current_degrees"> </span>
+          </p>
+          <p class="current_preciptation" id="curr_preciptation"></p>
+           <p class="current_wind" id="curr_wind"></p>
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Tuesday</p>
+              <p class="card-text">
+                <img
+                  src="images/free-icon-clouds-414927.png"
+                  width="30"
+                  id="clouds1"
+                />
+              </p>
+              <p class="card-tempr">0&#176;C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Wednesday</p>
+              <p class="card-text">
+                <img
+                  src="images/free-icon-clouds-414927.png"
+                  width="30"
+                  id="clouds2"
+                />
+              </p>
+              <p class="card-tempr">1&#176;C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Thursday</p>
+              <p class="card-text">
+                <img
+                  src="images/free-icon-clouds-and-sun-984622.png"
+                  id="clouds_sun"
+                  width="30px"
+                />
+              </p>
+              <p class="card-tempr">8&#176;C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Friday</p>
+              <p class="card-text">
+                <img
+                  src="images/free-icon-clouds-414927.png"
+                  width="30"
+                  id="clouds3"
+                />
+              </p>
+              <p class="card-tempr">3&#176;C</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card">
+            <div class="card-body">
+              <p class="card-title">Saturday</p>
+              <p class="card-text">
+                <img
+                  src="images/free-icon-clouds-414927.png"
+                  width="30"
+                  id="clouds"
+                />
+              </p>
+              <p class="card-tempr">2&#176;C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        Created by Alina Gavrylenko
+
+        <script src="src/index.js"></script>
+      </div>
+    </div>
+
+  </body>
+</html>
