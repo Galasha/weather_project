@@ -134,6 +134,8 @@ function currentCityWeather(position) {
   axios.get(`${apiUrl}&appid=${apiKey}`).then(getTemperature);
   axios.get(`${apiUrl}&appid=${apiKey}`).then(getPreciptation);
   axios.get(`${apiUrl}&appid=${apiKey}`).then(getWind);
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(getIcon);
+  axios.get(`${apiUrl}&appid=${apiKey}`).then(changeBackground);
 }
 
 function getCurrentPosition() {
